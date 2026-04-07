@@ -1,7 +1,7 @@
-import fastapi as FastAPI
+from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get('/')
+@app.get("/")
 def home():
-    return {"message":"your api is running"}
+    return {"message": "API is running"}
